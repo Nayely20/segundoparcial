@@ -29,16 +29,12 @@ namespace Parcial
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>
-
                 (
-
-                options => options.UseSqlServer(
-
+                 options => options.UseSqlServer(
                     Configuration.GetConnectionString("NayelyContext")
+                                        )
+                                );
 
-                    )
-
-                );
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
