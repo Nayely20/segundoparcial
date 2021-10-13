@@ -31,3 +31,18 @@ namespace Parcial.Models
 
     }
 }
+/*
+ [Key]  //validaremos nuestro modelo con Key --> ctrl+. para agregar la lbreria
+       public int PeopleID { get; set; }
+
+       [Required]   //requerido
+       [StringLength(60, MinimumLength = 5, ErrorMessage = "Por favor ingrese entre 5 a 40 caracteres")]
+       [Display(Name = "Nombre de la persona")]
+       public string Name { get; set; }
+       [Required]
+       [Display(Name = "Sexo")]
+       public SexType Sex { get; set; }
+       [Display(Name = "Pasatiempos")]
+       public string Hobbie { get; set; }
+
+ */
