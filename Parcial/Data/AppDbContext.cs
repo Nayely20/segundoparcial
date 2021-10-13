@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Parcial.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace Parcial.Data
 
         }
 
-        public DbSet<Parcial.Models.carta> carta { get; set; }
+        public DbSet<carta> carta { get; set; }
     }
 }
+//Parcial.Models.carta
