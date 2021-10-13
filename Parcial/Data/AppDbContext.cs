@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parcial.Data
 {
-    public class AppDbContext : DbContext
+    
 
    public class AppDbContext : DbContext
     {
@@ -15,6 +15,6 @@ namespace Parcial.Data
 
         }
 
-        public DbSet<carta> carta { get; set; }
+        public DbSet<Parcial.Models.carta> carta { get; set; }
     }
 }
