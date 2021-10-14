@@ -22,11 +22,10 @@ namespace Parcial.Models
         [Required(ErrorMessage = "contiene de la A al naipe K")]
         public string Nombre { get; set; }
         [Required(ErrorMessage = "{0} es requerido")]
-        [StringLength(200, MinimumLength = 10, ErrorMessage = "La longitud de {0} debe estar entre {2} y {1}")]
+        //[StringLength(200, MinimumLength = 10, ErrorMessage = "La longitud de {0} debe estar entre {2} y {1}")]
         public string Imagen { get; set; }
         [Url]
-        
-        public string Enlace { get; set; }
+         public string Enlace { get; set; }
 
 
     }

@@ -11,6 +11,8 @@ namespace Parcial.Data
 
    public class AppDbContext : DbContext
     {
+        internal object cartas;
+
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
 
